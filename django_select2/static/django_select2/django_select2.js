@@ -17,6 +17,7 @@
   var initHeavy = function ($element, options) {
     var settings = $.extend({
       ajax: {
+        url: $element.data('ajax-Url'),
         data: function (params) {
           var result = {
             term: params.term,
